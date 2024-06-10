@@ -1,0 +1,150 @@
+{
+  "products": [
+    {
+      "title": "iPhone 15  666666 ",
+      "desc": "Dynamic Island hiển thị linh động các cảnh báo và Hoạt Động Trực Tiếp, nhờ đó bạn sẽ không bỏ lỡ thông tin khi đang làm việc khác",
+      "price": 1299,
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone15-digitalmat-gallery-4-202309?wid=728&hei=666&fmt=png-alpha&.v=1693011169045",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "2"
+    },
+    {
+      "title": "iPhone 13",
+      "desc": "Hệ thống camera kép cho ảnh chụp và video đẹp tuyệt vời trong điều kiện ánh sáng yếu",
+      "price": 899.99,
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone13-digitalmat-gallery-3-202203?wid=728&hei=666&fmt=png-alpha&.v=1644988765122",
+      "category": "Iphone",
+      "isShow": true,
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "iPhone SE",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 899.45,
+      "isShow": true,
+      "category": "Iphone",
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphonese-digitalmat-gallery-3-202203?wid=728&hei=666&fmt=png-alpha&.v=1644987579761"
+    },
+    {
+      "id": "6",
+      "title": "iPhone 15 Pro Max",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 3999.99,
+      "isShow": true,
+      "category": "Iphone",
+      "image": "https://shopdunk.com/images/thumbs/0020074_iphone-15-pro-max-128gb_550.jpeg"
+    },
+    {
+      "id": "7",
+      "title": "iPhone 14 Plus",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 1999.95,
+      "isShow": true,
+      "category": "Iphone",
+      "image": "https://shopdunk.com/images/thumbs/0009606_iphone-14-plus-512gb_550.png"
+    },
+    {
+      "title": "iPhone 13",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 2000,
+      "image": "https://shopdunk.com/images/thumbs/0000639_product-red_550.png",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "d6d3"
+    },
+    {
+      "title": "iPhone 11 ",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 1000,
+      "image": "https://shopdunk.com/images/thumbs/0011632_iphone-11-64gb_550.png",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "4e47"
+    },
+    {
+      "title": "iPhone 15 Plus",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 3000,
+      "image": "https://shopdunk.com/images/thumbs/0019930_iphone-15-plus-128gb_550.jpeg",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "446c"
+    },
+    {
+      "title": "iPhone 14 Plus",
+      "desc": "Màn hình Retina HD 11,94 cm chú thích ¹ sáng, đầy màu sắc và sắc nét",
+      "price": 4000,
+      "image": "https://shopdunk.com/images/thumbs/0009496_iphone-14-plus-128gb_550.webp",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "0689"
+    },
+    {
+      "title": "iPhone 16",
+      "desc": "Dynamic Island hiển thị linh động các cảnh báo và Hoạt Động Trực Tiếp, nhờ đó bạn sẽ không bỏ lỡ thông tin khi đang làm việc khác",
+      "price": 1299,
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone15-digitalmat-gallery-4-202309?wid=728&hei=666&fmt=png-alpha&.v=1693011169045",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "ada8"
+    },
+    {
+      "title": "iPhone 12 64GB da sua",
+      "desc": "Dynamic Island hiển thị linh động các cảnh báo và Hoạt Động Trực Tiếp, nhờ đó bạn sẽ không bỏ lỡ thông tin khi đang làm việc khác",
+      "price": 2000,
+      "image": "https://shopdunk.com/images/thumbs/0006831_iphone-12-64gb_550.png",
+      "category": "Iphone",
+      "isShow": false,
+      "id": "68ec"
+    },
+    {
+      "id": "a2d2",
+      "title": "iphone moi nha",
+      "desc": "Dynamic Island hiển thị linh động các cảnh báo và Hoạt Động Trực Tiếp, nhờ đó bạn sẽ không bỏ lỡ thông tin khi đang làm việc khác",
+      "price": 111,
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone15-digitalmat-gallery-4-202309?wid=728&hei=666&fmt=png-alpha&.v=1693011169045",
+      "category": "Iphone",
+      "isShow": true
+    }
+  ],
+  "users": [
+    {
+      "email": "hieupt12@gmail.com",
+      "password": "$2a$10$YK/Cp8sOZvnW1RSiYLCYf.R.CZmUUmxeQeZmPlPLpO/eNm.50nQHu",
+      "firstname": "adminHieu",
+      "confirm": "123456",
+      "id": 1
+    },
+    {
+      "email": "hieupt123@gmail.com",
+      "password": "$2a$10$pwGdN6Lxg4Fa7kjl/8cudOy7chp33LlAJ.zuB8dA7p1C0jYap.q.2",
+      "firstname": "hieuadmin",
+      "confirm": "123456",
+      "id": 2
+    }
+  ],
+  "category": [
+    {
+      "id": "bfd0",
+      "categoryName": "Macbook"
+    },
+    {
+      "id": "aff6",
+      "categoryName": "Iphone"
+    },
+    {
+      "id": "617c",
+      "categoryName": "Ipad"
+    },
+    {
+      "categoryName": "Airpod",
+      "id": "DJQm-oO"
+    },
+    {
+      "categoryName": "Macmini",
+      "id": "eFtP11Y"
+    }
+  ]
+}

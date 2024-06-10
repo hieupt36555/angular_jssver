@@ -1,0 +1,10 @@
+.btn{
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 255, 0);
+    color: red;
+    border: 1px solid rgb(0, 0, 0);
+}

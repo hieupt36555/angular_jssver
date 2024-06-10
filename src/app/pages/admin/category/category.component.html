@@ -1,0 +1,56 @@
+<div class="col-sm-12 col-xl-6 form-div ">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Create Form</h6>
+        <form [formGroup]="categorySelect" (ngSubmit)="handleSubmit()" >
+
+            <div class="mb-3">
+                
+                <label for="exampleInputEmail1" class="form-label">Category*</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp" formControlName="categoryName">
+                @if(categorySelect.controls['categoryName'].errors?.['required'] && categorySelect.controls['categoryName'].touched){
+                    <div id="emailHelp" class="form-text">Nội Dung Category Không Được Để Trống
+                    </div>
+                }       
+            </div>
+
+            <button type="submit" class="btn btn-primary"  [disabled]="categorySelect.invalid"  >Submit</button>
+            <!--  -->
+        </form>
+    </div>
+</div>
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h6 class="mb-0">Category List</h6>
+       
+        <a href="/admin/category" class="" >Refresh</a>
+      </div>
+      <div class="table-responsive">
+        <table class="table text-start align-middle table-bordered table-hover mb-0">
+          <thead>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              #
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Name
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900" style="text-align: center;">Option</th>
+          </thead>
+          <tbody *ngFor="let category of categorys">
+            <tr>
+              <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                {{category.id}}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                {{category.categoryName }}
+              </td>
+              
+              <td style="text-align: center; ">
+                <button class="btn btn-danger" (click)="handleDelete(category.id)" >Delete</button>
+  
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

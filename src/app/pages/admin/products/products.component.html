@@ -1,0 +1,67 @@
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h6 class="mb-0">Products List</h6>
+        <a href="">Show All</a>
+      </div>
+      <div class="table-responsive">
+        <table class="table text-start align-middle table-bordered table-hover mb-0">
+          <thead>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              #
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Category
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Title
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Image
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Price
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              Description
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+              IsShow
+            </th>
+            <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900" style="text-align: center;">Option</th>
+          </thead>
+          <tbody *ngFor="let product of products">
+            <tr>
+              <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                {{product.id}}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                {{product.category }}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                {{product.title}}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                <img src="{{product.image}}" alt="" style="width: 1000px;  ">
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                ${{product.price}}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                {{product.desc}}
+              </td>
+              <td class="whitespace-nowrap px-4 py-2 text-gray-700">
+                {{product.isShow}}
+              </td>
+  
+              <td style="text-align: center; ">
+                <a class="btn btn-primary" [routerLink]="['/product', product.id]">View</a> 
+                <a class="btn btn-warning" [routerLink]="['product/edit/', product.id]">Edit</a> 
+                <button class="btn btn-danger" (click)="handleDelete(product.id)">Delete</button>
+  
+              </td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

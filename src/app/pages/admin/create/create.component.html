@@ -1,0 +1,71 @@
+<div class="col-sm-12 col-xl-6 form-div"  >
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Create Form</h6>
+        <form [formGroup]="addProductForm" (ngSubmit)="handleSubmit()" >
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Category*</label>
+                <select class="form-select form-select-sm mb-3" aria-label="Default select example"  id="category"  formControlName="category" >
+                    <option *ngFor="let category of category" [value]="category.categoryName">{{ category.categoryName }}</option>
+                </select>
+                @if(addProductForm.controls['category'].errors?.['required'] && addProductForm.controls['category'].touched){
+                    <div id="emailHelp" class="form-text">Chưa Chọn Danh Mục
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3">
+                
+                <label for="exampleInputEmail1" class="form-label">Tilte*</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp" formControlName="title">
+                @if(addProductForm.controls['title'].errors?.['required'] && addProductForm.controls['title'].touched){
+                    <div id="emailHelp" class="form-text">Nội Dung Title Không Được Để Trống
+                    </div>
+                }
+                @if(addProductForm.controls['title'].errors?.['minlength'] && addProductForm.controls['title'].touched){
+                    <div id="emailHelp" class="form-text">Title Phải Lớn Hơn 6
+                    </div>
+                }
+               
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Price*</label>
+                <input type="number" class="form-control" id="price" aria-describedby="emailHelp" formControlName="price">
+                @if(addProductForm.controls['price'].errors?.['required'] && addProductForm.controls['price'].touched){
+                    <div id="emailHelp" class="form-text">Price Không Được Để Trống
+                    </div>
+                }
+                @if(addProductForm.controls['price'].errors?.['min'] && addProductForm.controls['price'].touched){
+                    <div id="emailHelp" class="form-text">Price Phải Lớn Hơn 0
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Image*</label>
+                <input type="text" class="form-control" id="image" aria-describedby="emailHelp" formControlName="image" >
+                @if(addProductForm.controls['image'].errors?.['required'] && addProductForm.controls['image'].touched){
+                    <div id="emailHelp" class="form-text">Image Không Được Để Trống
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Desc*</label>
+                <input type="text" class="form-control" id="desc" aria-describedby="emailHelp" formControlName="desc" >
+                @if(addProductForm.controls['desc'].errors?.['required'] && addProductForm.controls['desc'].touched){
+                    <div id="emailHelp" class="form-text">Description Không Được Để Trống
+                    </div>
+                }
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="isShow" formControlName="isShow" >
+                <label class="form-check-label" for="exampleCheck1">Show Product</label>
+                
+            </div>
+            <button type="submit" class="btn btn-primary"  [disabled]="addProductForm.invalid"  >Submit</button>
+        </form>
+    </div>
+</div>

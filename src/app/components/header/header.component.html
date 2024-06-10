@@ -1,0 +1,57 @@
+<header class="header_section header-style-no-collapse">
+    <div class="header_middle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col col-lg-3 col-md-3 col-sm-12">
+                    <div class="brand_logo">
+                        <a class="brand_link" href="" [routerLink]="['/']" >
+                            <!-- <h1>PC TH</h1> -->
+                            <img src="assets/images/logo/logo_1x.png" srcset="assets/images/logo/logo_2x.png 2x" alt>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                    <form action="#">
+                        <div class="advance_serach">
+                            <div class="select_option mb-0 clearfix">
+                                <select>
+                                    <option data-display="All Categories">Select A Category</option>
+                                    <option value="1">New Arrival Products</option>
+                                    <option value="2">Most Popular Products</option>
+                                    <option value="3">Deals of the day</option>
+                                    <option value="4">Mobile Accessories</option>
+                                    <option value="5">Computer Accessories</option>
+                                    <option value="6">Consumer Electronics</option>
+                                    <option value="7">Automobiles & Motorcycles</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form_item">
+
+                                <input type="search" name="search" placeholder="Search Prudcts..." [(ngModel)]="query">
+                                <button type="submit" class="search_btn"   ><i class="far fa-search"></i></button>
+                            </div>
+
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col col-lg-3 col-md-3 col-sm-12">
+                    <button class="mobile_menu_btn2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fal fa-bars"></i>
+                    </button>
+                    <button type="button" class="cart_btn">
+                        <span class="cart_icon">
+                            <i class="icon icon-ShoppingCart"></i>
+                            <small class="cart_counter">3</small>
+                        </span>
+                        <span class="cart_amount">$909.00</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <app-sidebar></app-sidebar>
+</header>
